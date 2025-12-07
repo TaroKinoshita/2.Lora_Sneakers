@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Demographics Section */
+.demographics {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border: 2px solid #e0e0e0;
+}
+
+.demographics h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 15px;
+}
+
+.form-group select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    background: white;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.form-group select:hover {
+    border-color: #4ECDC4;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: #4ECDC4;
+}
+
+/* Question Blocks */
+.question-block {
+    margin-bottom: 60px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.question-block:last-of-type {
+    border-bottom: none;
+}
+
+.question-number {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Images Container - 3 columns */
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.image-card {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.rating-container {
+    text-align: center;
+}
+
+.rating-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+.rating-value {
+    color: #4ECDC4;
+    font-size: 24px;
+}
+
+.slider-labels {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.slider-labels span {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    min-width: 40px;
+}
+
+.slider {
+    flex: 1;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(to right, #4ECDC4, #FF6B6B);
+    border-radius: 5px;
+    outline: none;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background: #555;
+}
+
+.thank-you {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.thank-you h2 {
+    color: #4ECDC4;
+    margin-bottom: 10px;
+}
+
+/* Responsive - スマホで縦並び */
+@media (max-width: 768px) {
+    .images-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .form-group select {
+        max-width: 100%;
+    }
+}
